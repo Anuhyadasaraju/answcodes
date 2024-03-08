@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------
 #
-# This is a Python program to print 'Hello, World!' to user.
+# This is a Python program to print 'Hello, World!' to user
 #
 # AUTHOR  : Anuhya Dasaraju
 # DATE    : 7th March, 2024
