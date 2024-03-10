@@ -7,16 +7,24 @@
 # VERSION : 1.0
 #------------------------------------------------------------------------
 print("Enter 2 numbers to perform arithmetic operations")
-num1 = int(input("num1 : "))
-num2 = int(input("num2 : "))
+while True:
+    num1 = input('Enter the first number: ')
+    num2 = input('Enter the second number: ')
+
+    try:
+        num1 = float(num1)
+        num2 = float(num2)
+        break
+
+    except ValueError:
+        print('Invalid!! You need to enter a number!\n')
 
 add = num1 + num2
-subtract = num1 - num2
-multiply = num1 * num2
-divide = (num1 / num2)
-rounded_division = round(divide,2)
+rounded_subtract = round(num1 - num2, 2)
+rounded_multiply = round(num1 * num2, 2)
+rounded_division = round(num1 / num2, 2)
 
-print(f"Addition of {num1} and {num2} is: {add}")
-print(f"Subtraction of {num1} and {num2} is: {subtract}")
-print(f"Multiplication of {num1} and {num2} is: {multiply}")
+print(f"\nAddition of {num1} and {num2} is: {add}")
+print(f"Subtraction of {num1} and {num2} is: {rounded_subtract}")
+print(f"Multiplication of {num1} and {num2} is: {rounded_multiply}")
 print(f"Division(rounded to 2 decimal places) of {num1} and {num2} is: {rounded_division}")
