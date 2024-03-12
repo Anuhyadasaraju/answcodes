@@ -8,7 +8,7 @@
 # 1.0      08th Mar, 2024   Anuhya Dasaraju  Initial version
 # 1.1      10th Mar, 2024   Anuhya Dasaraju  Added input validation code
 # 1.2      10th Mar, 2024   Anuhya Dasaraju  Added code for handling divide by zero error
-# 1.3      10th Mar, 2024   Anuhya Dasaraju  Removed while loop for Try/Except block and added the operations in else part
+# 1.3      12th Mar, 2024   Anuhya Dasaraju  Removed while loop for Try/Except block and added the operations in else part
 #
 # ------------------------------------------------------------------------
 print("Enter 2 numbers to perform arithmetic operations")
