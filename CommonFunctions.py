@@ -1,6 +1,7 @@
 
 
 class CommonFunctions():
+    #Login Module
     def do_login(self,sb,url,username,password):
         sb.open(url)
         sb.type("#username", username)
@@ -8,15 +9,13 @@ class CommonFunctions():
         sb.type("#password", password)
         sb.click("#submit")
 
+    #Sign Out Module
     def do_logout(selfb,sb):
+        sb.wait_for_element_present(".right-nav-item.profile-link",timeout=10)
         sb.click(".right-nav-item.profile-link")
-        sb.click("#basics-tab")
-        sb.click("button.log-out-button")
+        sb.click("#basics-tab",timeout=10)
+        sb.wait(2)
+        sb.click("button.log-out-button",timeout=10)
+        sb.wait(2)
 
-    def do_get_active_tmpl_name(self,sb):
-        sb.click(".right-nav-item.profile-link", timeout = 15)
-        sb.click("#templates-tab", timeout=10)
-        sb.wait_for_element_present(".v-card__title.cardTitleForViewer",timeout=15)
-        name = sb.find_element(".v-card__title.cardTitleForViewer",timeout=10)
-        print("Selected Template is: " + name.text)
 
