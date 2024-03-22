@@ -1,5 +1,5 @@
 from seleniumbase import BaseCase
-from prezent_task.CommonFunctions import CommonFunctions
+from prezent_task.common_functions import CommonFunctions
 
 '''Task1 : Logging into the URL, fetching the current template name and doing sign out'''
 

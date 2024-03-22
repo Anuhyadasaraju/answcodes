@@ -1,5 +1,5 @@
 from seleniumbase import BaseCase
-from prezent_task.CommonFunctions import CommonFunctions
+from prezent_task.common_functions import CommonFunctions
 
 '''Task2 : Logging into the URL, generating the fingerprint and doing sign out'''
 
