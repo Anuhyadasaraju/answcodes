@@ -14,7 +14,7 @@ class CommonFunctions():
 
 
     #Sign Out Module
-    def do_logout(selfb,sb):
+    def do_logout(self,sb):
         sb.wait_for_element_present("div.profile-image-wrapper .profile-image-upload",timeout=10)
         print("Clicking on Profile icon")
         sb.click("div.profile-image-wrapper .profile-image-upload", timeout=10)
